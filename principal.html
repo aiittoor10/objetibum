@@ -34,19 +34,34 @@
             width: 100px;
             border-radius: 100px;
             margin-right: 20px;
-            margin-top: -25px;
         }
         .card-img {
             width: 180px;
             margin-left: 180px;
         }
-        h1.display-4, h2.display-4 {
+        h1.display-4 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        h2.display-4 {
             margin-bottom: 10px;
         }
+        header img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 120px;
+        }
         @media (max-width: 576px) {
-            h1.display-4, h2.display-4 {
-                font-size: 1.5rem;
+            h1.display-4 {
+                font-size: 2rem;
                 line-height: 1.2;
+            }
+            h2.display-4 {
+                font-size: 1.5rem;
+            }
+            header img {
+                max-width: 90px;
             }
         }
     </style>
@@ -55,7 +70,8 @@
     <header class="text-black py-4">
         <div class="container text-center">
             <img src="media/logo.webp" alt="logo">
-            <h1 class="display-4">OBJETIBUM NOTICIAS</h1>
+            <h1 class="display-4">OBJETIBUM</h1>
+            <h2 class="display-4">NOTICIAS</h2>
         </div>
     </header>
 <div class="container">
