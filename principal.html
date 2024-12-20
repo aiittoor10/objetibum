@@ -138,15 +138,25 @@
 </footer>
 
 <script>
-    document.getElementById('readMoreBtn').addEventListener('click', function() {
-        document.getElementById('fullContent').style.display = 'block';
-        this.style.display = 'none';
+
+    document.querySelectorAll('.btn-read-more').forEach(button => {
+        button.addEventListener('click', function() {
+            const cardBody = this.closest('.card-body');
+            const fullContent = cardBody.querySelector('.content-full');
+            fullContent.style.display = 'block';
+            this.style.display = 'none';
+        });
     });
 
-    document.getElementById('readLessBtn').addEventListener('click', function() {
-        document.getElementById('fullContent').style.display = 'none';
-        document.getElementById('readMoreBtn').style.display = 'inline-block';
+    document.querySelectorAll('.btn-read-less').forEach(button => {
+        button.addEventListener('click', function() {
+            const cardBody = this.closest('.card-body');
+            const fullContent = cardBody.querySelector('.content-full');
+            fullContent.style.display = 'none';
+            cardBody.querySelector('.btn-read-more').style.display = 'inline-block';
+        });
     });
+
 </script>
 
 </body>
