@@ -3,146 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OBJETIBUM - Noticias</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <title>Previsualización de Noticia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
-        /* Personalización adicional para OBJETIBUM */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-read-more {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-read-more:hover {
+            background-color: #0056b3;
+        }
+        .content-full {
+            display: none;
+            margin-top: 20px;
+        }
+        img {
+            width: 100px;
+            border-radius: 100px;
+            margin-right: 20px;
+            
+        }
+        
+        h2{
+            margin-top: -25px;
+        }
+ 
 
-/* Encabezado */
-/* General Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header */
-header {
-    background-image: url('header-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 4rem 0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-header p {
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-/* Navbar */
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .nav-link {
-    font-weight: 500;
-}
-
-.navbar .nav-link:hover {
-    background-color: #f1c40f;
-    border-radius: 4px;
-    color: #000;
-}
-
-/* Main Article */
-article {
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-}
-
-article h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-article p {
-    text-align: justify;
-}
-
-article h3 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    color: #2c3e50;
-}
-
-/* Centered Image Styling */
-figure {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-figure img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-figure img:hover {
-    transform: scale(1.05);
-}
-
-figure figcaption {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-top: 0.5rem;
-}
-
-/* Footer */
-footer {
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    border-top: 4px solid #f1c40f;
-}
-
-footer a {
-    color: #f1c40f;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
 
     </style>
 </head>
 <body>
-    <header class="bg-dark text-white py-4">
+    <header class=" text-black py-4">
         <div class="container text-center">
+            <img src="media/logo.webp" alt="logo">
             <h1 class="display-4">OBJETIBUM</h1>
+            <h2 class="display-4">NOTICIAS</h1>
+
+
                 </div>
     </header>
-
-
-    <main class="container my-5">
-        <article class="bg-white p-4 shadow rounded">
-            <h2 class="fw-bold">CaixaBank enfrenta una incidencia técnica que paraliza su app y banca online</h2>
-            <p class="text-muted">Por <span class="fw-semibold">Jesús Inarejos</span> | <span>19 de Diciembre de 2024</span></p>
-            <figure class="mb-4">
-                <img src="media/caixa.webp" class="img-fluid rounded" alt="CaixaBank incidencia técnica">
-                <figcaption class="text-muted text-center mt-2">La incidencia técnica de CaixaBank afecta a miles de usuarios en plena temporada navideña.</figcaption>
-            </figure>
-            <section>
-                <p>El jueves 19 de diciembre, CaixaBank sufrió una caída generalizada en sus servicios digitales, afectando tanto a su aplicación móvil como a su plataforma de banca online. Este problema técnico, que comenzó a reportarse desde el mediodía, generó frustración entre miles de usuarios que no pudieron acceder a sus cuentas ni realizar operaciones financieras habituales.</p>
+<div class="container">
+    <div class="card">
+        <img src="media/caixa.webp" class="card-img-top" alt="Imagen de la noticia">
+        <div class="card-body">
+            <h3 class="card-title"><p>CaixaBank enfrenta una incidencia técnica que paraliza su app y banca online</h5>
+                <p class="card-text">El jueves 19 de diciembre, CaixaBank sufrió una caída generalizada en sus servicios digitales, afectando tanto a su aplicación móvil como a su plataforma de banca online. Este problema técnico, que comenzó a reportarse desde el mediodía, generó frustración entre miles de usuarios que no pudieron acceder a sus cuentas ni realizar operaciones financieras habituales.</p>
+            <button class="btn btn-read-more" id="readMoreBtn">Leer más</button>
+            <div class="content-full" id="fullContent">
                 <p>La entidad aseguró que trabaja para solucionar la incidencia lo antes posible, descartando que se trate de un ciberataque. Sin embargo, el inconveniente surge en un momento crítico: la temporada navideña, donde el volumen de transacciones suele dispararse.</p>
                 <h3 class="mt-4">Reacciones en redes sociales</h3>
                 <p>Desde primeras horas de la mañana, numerosos clientes comenzaron a expresar su preocupación a través de redes sociales, principalmente en X (antiguo Twitter), reportando problemas al intentar iniciar sesión. Algunos usuarios compartieron capturas de pantalla con mensajes de error como "Sin conexión" o "Se ha producido un error", reflejando su imposibilidad para operar en la app y en la banca online.</p>
@@ -152,17 +72,31 @@ footer a:hover {
                 <p>Alrededor de las 18:00 horas, la entidad informó que los servicios digitales comenzaban a recuperar la normalidad, aunque sin ofrecer detalles técnicos sobre el origen del problema ni confirmar si la incidencia estaba completamente resuelta.</p>
                 <h3 class="mt-4">Conclusión</h3>
                 <p>La caída de los servicios digitales ocurre en un momento especialmente delicado. Este tipo de interrupciones no solo afecta la confianza de los usuarios, sino que también pone de manifiesto la dependencia creciente de los servicios digitales en la vida cotidiana.</p>
-                <p class="fw-bold">Informa Jesús Inarejos para OBJETIBUM noticias.</p>
-            </section>
-        </article>
-    </main>
+                <p class="fw-bold">Informa Jesús Inarejos para Objetibum Noticias.</p>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 OBJETIBUM. Todos los derechos reservados.</p>
+                <button class="btn btn-secondary" id="readLessBtn">Leer menos</button>
+            </div>
         </div>
-    </footer>
+    </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 OBJETIBUM. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('readMoreBtn').addEventListener('click', function() {
+        document.getElementById('fullContent').style.display = 'block';
+        this.style.display = 'none';
+    });
+
+    document.getElementById('readLessBtn').addEventListener('click', function() {
+        document.getElementById('fullContent').style.display = 'none';
+        document.getElementById('readMoreBtn').style.display = 'inline-block';
+    });
+</script>
+
 </body>
 </html>
