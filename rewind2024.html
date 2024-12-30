@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewind 2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0d1117;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: radial-gradient(circle, #161b22, #0d1117);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #c9d1d9;
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            color: #58a6ff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #58a6ff;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            border: none;
+            font-size: 1.2rem;
+            padding: 10px 30px;
+            border-radius: 50px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.1);
+            background-color: #1f6feb;
+        }
+
+        /* Noticias */
+        .news-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .news-month {
+            margin-bottom: 30px;
+        }
+
+        .news-month h2 {
+            color: #58a6ff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news-card {
+            background: #21262d;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: all 0.5s ease-out;
+        }
+
+        .news-card.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .news-card h3 {
+            font-size: 1.5rem;
+            color: #58a6ff;
+        }
+
+        .news-card p {
+            font-size: 1rem;
+            color: #c9d1d9;
+        }
+
+        /* Footer */
+        footer {
+            background: #0d1117;
+            color: #c9d1d9;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="text-center">
+            <h1 class="hero-title">Rewind 2024</h1>
+            <p class="hero-subtitle">Revive las 36 noticias que marcaron el año, mes a mes.</p>
+            <a href="#news" class="btn btn-primary btn-lg mt-3">Explorar Noticias</a>
+        </div>
+    </div>
+
+    <!-- Noticias -->
+    <div id="news" class="news-section">
+        <!-- Mes Enero -->
+        <div class="news-month">
+            <h2>Enero</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/enero1.jpg" alt="Noticia 1">
+                    <h3>Terremoto de magnitud 7.6 en Japón genera alerta de tsunami</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/enero2.jpg" alt="Noticia 2">
+                    <h3>Protestas contra la ley de amnistía
+                    </h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/enero3.avif" alt="Noticia 3">
+                    <h3>Reanudación de las obras del Nuevo Mestalla en Valencia</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mes Febrero -->
+        <div class="news-month">
+            <h2>Febrero</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia4.jpg" alt="Noticia 4">
+                    <h3>El Partido Popular revalida la mayoría absoluta en Galicia</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia5.avif" alt="Noticia 5">
+                    <h3>Incendio en Valencia: La cifra de víctimas mortales sube a diez.</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia6.jpg" alt="Noticia 6">
+                    <h3>Kansas City Chiefs ganan el Super Bowl LVII</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Marzo</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia7.webp" alt="Noticia 4">
+                    <h3>Bruselas congelará fondos europeos si no se aprueba antes de marzo la subida fiscal al diésel</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia8.jpg" alt="Noticia 5">
+                    <h3>Carles Puigdemont anuncia que será el candidato de Junts a las elecciones catalanas</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia9.jpg" alt="Noticia 6">
+                    <h3>Protestas en Cuba por escasez de alimentos y energía</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Abril</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia10.jpg" alt="Noticia 4">
+                    <h3>EH Bildu gana las elecciones autonómicas por primera vez, según EITB Focus</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticias11.jpg" alt="Noticia 5">
+                    <h3>Pedro Sánchez considera dimitir tras la apertura de una investigación judicial sobre su esposa, Begoña Gómez</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia12.jpg" alt="Noticia 6">
+                    <h3>El Athletic club de Bilbao saco la gabarra 40 años después en una final ante el Mallorca que se decidió en penaltis</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Mayo</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia13.webp" alt="Noticia 4">
+                    <h3>El Real Madrid gana du 15 Champions tras vencer al Borussia Dormunt </h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/notica14.jpg" alt="Noticia 5">
+                    <h3>España reconoce oficialmente al Estado de Palestina, llamando a una solución de dos Estados</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia15.webp" alt="Noticia 6">
+                    <h3>El Congreso aprueba una ley de amnistía</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Junio</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia16.webp" alt="Noticia 4">
+                    <h3>Putin y Kim Jong-un se reúnen en Corea del Norte por primera vez en 24 años</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia17.jpg" alt="Noticia 5">
+                    <h3>La UE acuerda un nuevo paquete de sanciones contra Rusia</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia18.jpg" alt="Noticia 6">
+                    <h3>RTVE emitirá las finales de la Liga de Campeones hasta 2027</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Julio</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia19.jpg" alt="Noticia 4">
+                    <h3>España se corona campeona de la Eurocopa 2024 tras una épica victoria sobre Inglaterra</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia20.webp" alt="Noticia 5">
+                    <h3>España conquista 18 medallas, incluyendo 5 oros, en los Juegos Olímpicos de París 2024</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia21.jpg" alt="Noticia 6">
+                    <h3>Protestas en España contra el impacto del turismo masivo y el aumento de la vivienda</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Agosto</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia22.webp" alt="Noticia 4">
+                    <h3>Agosto de 2024: España registra el mes más cálido de su historia con temperaturas récord</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia23.jpg" alt="Noticia 5">
+                    <h3>Escalada del conflicto en Gaza: Enfrentamientos mortales entre Israel y Hamas intensifican la crisis humanitaria</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia24.jpg" alt="Noticia 6">
+                    <h3>La Vuelta a España 2024 cautiva al mundo con una edición repleta de emoción y desafíos extremos</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Septiembre</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia25.webp" alt="Noticia 4">
+                    <h3>Zelenski visita Estados Unidos para reforzar la cooperación en defensa frente a Rusia</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia26.jpg" alt="Noticia 5">
+                    <h3>El Gobierno promete 50 millones de euros para apoyar a los menores migrantes en Canarias</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia27.jpg" alt="Noticia 6">
+                    <h3>Erling Haaland arrasa en la Premier League con 7 goles en 3 partidos, liderando al Manchester City</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Octubre</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/noticia28.webp" alt="Noticia 4">
+                    <h3>La alianza entre Rusia y Corea del Norte intensifica las preocupaciones por la guerra en Ucrania y la estabilidad en Asia-Pacífico</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/imagen29.webp" alt="Noticia 5">
+                    <h3>Ayuso arremete contra el Gobierno de Sánchez, calificándolo como "el enemigo de Madrid" y defendiendo su gestión autonómica</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/noticia30.webp" alt="Noticia 6">
+                    <h3>Carlos Sainz conquista el Gran Premio de México y suma su segunda victoria de la temporada en la Fórmula 1</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Noviembre</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/imagen31.webp" alt="Noticia 4">
+                    <h3>Elon Musk alcanza un récord histórico con una fortuna de 348.000 millones de dólares</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/imagen32.jpg" alt="Noticia 5">
+                    <h3>Protestas en Valencia tras la devastación causada por la dana</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/imagen33.avif" alt="Noticia 6">
+                    <h3>Donald Trump gana las elecciones</h3>
+                </div>
+            </div>
+        </div>
+        <div class="news-month">
+            <h2>Diciembre</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="media/imagen 34.webp" alt="Noticia 4">
+                    <h3>Tragedia aérea en Kazajistán: 38 muertos y 29 sobrevivientes tras el accidente de un avión Embraer 190</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/imagen35.jpg" alt="Noticia 5">
+                    <h3>Madrid brilla con su iluminación navideña, mercados y actividades culturales en el corazón de la ciudad</h3>
+                </div>
+                <div class="news-card">
+                    <img src="media/iamgen 36.jpg" alt="Noticia 6">
+                    <h3>Baloncesto alemán en auge: La selección sigue su éxito tras el oro en el Mundial y su fuerte presencia en la NBA</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Añade más meses de forma similar -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Objetibum Noticias | Rewind Noticias 2024 </p>
+    </footer>
+
+    <script>
+        // Animar tarjetas al hacer scroll
+        const cards = document.querySelectorAll('.news-card');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        cards.forEach((card) => observer.observe(card));
+    </script>
+</body>
+</html>
