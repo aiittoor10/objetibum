@@ -22,7 +22,7 @@ body {
     color: #58a6ff;
 }
 .headline-section {
-    background: #221816;
+    background: #0d1117;
     padding: 30px 20px;
 }
 .main-headline {
@@ -159,66 +159,91 @@ background-color: #1f6feb;
     text-align: justify;
 }
 
+.tituloarticulo {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    text-align: center;
+    text-decoration: underline red;
+    margin-bottom: 40px;
+}
+
+/* Sección de Noticias */
 .timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 800px;
+    margin-top: 30px;
 }
 
 .timeline-item {
-    display: flex;
-    align-items: center;
+    background: #21262d;
+    border-radius: 10px;
+    padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.timeline-img {
-    flex-shrink: 0;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 10%;
-    border: 4px solid #007bff;
-    margin-right: 20px;
+.timeline-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 }
 
+/* Títulos y Textos de Noticias */
+.timeline-item h5 {
+    font-size: 1.5rem;
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: #c9d1d9;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Imágenes */
 .timeline-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+    height: auto;
 }
 
-.timeline-content {
-    flex-grow: 1;
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+/* Categorías */
+.nacionalEspainia,
+.internacionalNt {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 15px;
 }
 
-.timeline-content h5 {
-    margin: 0 0 10px;
-    font-size: 1.2rem;
-    color: #333;
+.nacionalEspainia {
+    color: #58a6ff;
+    border-left: 5px solid #58a6ff;
 }
 
-.timeline-content p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #666;
+.internacionalNt {
+    color: #1f6feb;
+    border-left: 5px solid #1f6feb;
 }
 
+/* Responsividad */
 @media (max-width: 768px) {
     .timeline-item {
-        flex-direction: column;
         text-align: center;
+        padding: 15px;
     }
 
-    .timeline-img {
-        margin: 0 auto 15px;
+    .timeline-img img {
+        margin-bottom: 15px;
     }
 
-    .timeline-content {
-        text-align: left;
+    .timeline-item h5 {
+        font-size: 1.3rem;
+    }
+
+    .timeline-item p {
+        font-size: 0.9rem;
     }
 }
